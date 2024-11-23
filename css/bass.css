@@ -526,7 +526,7 @@ img{
 }
 
 .skills_html{
-    width: 50%;
+    width: 60%;
 }
 
 .skills_css{
@@ -534,8 +534,20 @@ img{
 }
 
 .skills_c {
-    width: 95%;
+    width: 70%;
 }
+
+.skills_FPGA{
+    width: 70%
+}
+
+.skills_Python{
+    width: 70%
+}
+.skills_ArduinoIDE{
+    width: 90%
+}
+
 
 
 
@@ -798,6 +810,70 @@ margin-bottom: var(--mb-0-75);
 .swiper-pagination-bullets{
     outline: none;
 }
+
+/* ==========================================MiniProject========================== */
+.MiniProject_container{
+    overflow: initial;
+}
+
+.MiniProject_content{
+    padding: 0 1.5rem;
+}
+
+.MiniProject_img{
+width: 256px;
+border-radius: 0.5rem;
+justify-self: center;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.MiniProject_tittle{
+    font-size:var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.MiniProject_description{
+margin-bottom: var(--mb-0-75);
+text-align: justify;
+text-justify: inter-word;
+}
+
+.MiniProject_button:hover .button_icon{
+    transform: translateX(0.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content:'';
+    /* visibility: hidden; */
+}
+
+.swiper-MiniProject-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left: -.5rem;
+}
+
+.swiper-button-next{
+    right: -.5rem;
+}
+.swiper-horizontal > .swiper-pagination-bullets{
+    bottom: -10;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullets{
+    outline: none;
+}
+
 
 /* ====================================PROJECT IN MIND============== */
 .project{
@@ -1097,6 +1173,7 @@ margin-bottom: var(--mb-0-75);
     .about_container,
     .skills_container,
     .achievement_content,
+    .MiniProject_content,
     .project_container,
     .contact_container,
     .footer_container{
@@ -1216,8 +1293,13 @@ margin-bottom: var(--mb-0-75);
     .services_icon{
         font-size: 2rem;
     }
+
+    .services_img{
+        width: 320px;
+        height: 100px;
+    }
     .services_content{
-        padding: 6rem 0 2rem 2.5rem;
+        padding: 6px 2rem 2.5rem;
     }
     .services_modal-content{
         width: 450px;
@@ -1227,6 +1309,13 @@ margin-bottom: var(--mb-0-75);
         width: 320px;
     }
     .achievement_content{
+        align-items: center;
+    }
+
+    .MiniProject_img{
+        width: 320px;
+    }
+    .MiniProject_content{
         align-items: center;
     }
 
@@ -1287,6 +1376,13 @@ margin-bottom: var(--mb-0-75);
         column-gap: 5rem;
     }
     .swiper-achievement-icon{
+        font-size: 3.5rem;
+    }
+
+    .MiniProject_content{
+        column-gap: 5rem;
+    }
+    .swiper-MiniProject-icon{
         font-size: 3.5rem;
     }
     .swiper-button-prev{
