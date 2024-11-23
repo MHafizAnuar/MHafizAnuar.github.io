@@ -114,6 +114,24 @@ modalCloses.forEach((modalClose) =>{
       },
 
     });
+    
+// =========================PORTFLIO SWIPER===============
+
+let swiperMiniProject = new Swiper('.MiniProject_container', {
+    cssMode: true,
+    loop:true,
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+    },
+
+  });
+
 
 // ==============================TESTIMONIAL============
 let swiperTestimonial = new Swiper('.testimonial_container', {
